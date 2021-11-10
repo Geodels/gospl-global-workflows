@@ -35,10 +35,9 @@ climate:
 ```
 
 
-#### Important
+## Getting original input dataset
 
-By default `InitialisingEarth` will export in the `tecto_X_XXMa.npz` file the uplift/subsidence with the key `t` **and** the corresponding paleo-elevation from the model (here Scotese) with the key `z`. 
+An example of input dataset for running `goSPL` model  is available from this link:
 
-+ In cases where you want to run a `goSPL` model constrained with the Scotese paleo-elevation (meaning that every 5 Ma the `goSPL` elevation is forced to match with Scotese one) you do not have to change anything.
++ Salles, Tristan (2021): Global dataset. figshare. Dataset. https://doi.org/10.6084/m9.figshare.16968166.v1
 
-+ However generally, we do not want to have such constrained in our model and would rather try to incrementally change the uplift/subsidence forcing based on the computed erosion/deposition. In such cases, you will have to remove the `z` key from the file. This is done in the cell below:
