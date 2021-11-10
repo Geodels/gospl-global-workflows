@@ -1,0 +1,28 @@
+name: Earth builder from 100 Ma to present
+
+domain:
+    reflvl: 9
+    interp: 3
+    gospl: 'gospldata'
+
+time:
+    start: 100
+    end: 0
+    dt: 5
+
+dbscan:
+    nprocs: 8
+    clustngbh: 6
+
+paleodata:
+    dem: '../1-data/ndem'
+    demforce: True
+    demsmth: 0.5
+    rain: '../1-data/rain'
+    vel: '../1-data/vel5Ma'
+    rot: '../1-data/PALEOMAP_PlateModel.rot'
+    plate: '../1-data/PlateBoundaries.gpml'
+
+output:
+    dir: 'reconstruct'
+    makedir: False

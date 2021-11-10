@@ -1,0 +1,52 @@
+name: 5 Ma global landscape evolution model unconstrained iteratively fine-tuned using the missmatch approach
+
+domain:
+    npdata: '../2-inputgen/gospldata/mesh_9_100Ma'
+    flowdir: 5
+    fast: False
+    nodep: False
+    backward: False
+    interp: 3
+
+time:
+    start: -100.e6
+    end: -95.e6
+    tout: 1e5
+    dt: 10000.
+
+spl:
+    K: 8.0e-8
+    d: 0.42
+
+diffusion:
+    hillslopeKa: 0.05
+    hillslopeKm: 0.25
+    clinSlp: 5.e-6
+    smthS: 1.e2
+    smthD: 8.e5
+    offset: 50.
+    oFill: -3500.
+    nldep: False
+
+sea:
+    position: 1.
+    curve: '../2-inputgen/gospldata/sealevel.csv'
+
+plates:
+  - start: -100.e6
+    plate: '../2-inputgen/gospldata/plate_9_100Ma'
+    upsub: 'missmatch/it3_tect_100Ma'
+
+climate:
+  - start: -100.e6
+    map: ['../2-inputgen/gospldata/rain_9_100Ma','r']
+  - start: -95.e6
+    map: ['../2-inputgen/gospldata/rain_9_95Ma','r']
+
+compaction:
+    phis: 0.49
+    z0s: 3700.0
+
+output:
+    dir: 'missmatch'
+    makedir: False

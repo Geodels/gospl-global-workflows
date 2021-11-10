@@ -1,0 +1,146 @@
+name: 100 Ma global landscape evolution model constrained with Scotese paleo-elevation
+
+domain:
+    npdata: '../2-inputgen/gospldata/mesh_9_100Ma'
+    flowdir: 5
+    fast: False
+    nodep: False
+    backward: False
+    interp: 3
+
+time:
+    start: -100.e6
+    end: 0
+    tout: 5e6
+    dt: 0.05e6
+
+spl:
+    K: 3.0e-8
+    d: 0.42
+
+diffusion:
+    hillslopeKa: 0.05
+    hillslopeKm: 0.25
+    clinSlp: 3.e-6
+    smthS: 4.e5
+    smthD: 3.e5
+    offset: 250.
+    nldep: False
+
+sea:
+    position: 1.
+    curve: '../2-inputgen/gospldata/sealevel.csv'
+
+plates:
+  - start: -100.e6
+    plate: '../2-inputgen/gospldata/plate_9_100Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_100Ma'
+  - start: -95.e6
+    plate: '../2-inputgen/gospldata/plate_9_95Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_95Ma'
+  - start: -90.e6
+    plate: '../2-inputgen/gospldata/plate_9_90Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_90Ma'
+  - start: -85.e6
+    plate: '../2-inputgen/gospldata/plate_9_85Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_85Ma'
+  - start: -80.e6
+    plate: '../2-inputgen/gospldata/plate_9_80Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_80Ma'
+  - start: -75.e6
+    plate: '../2-inputgen/gospldata/plate_9_75Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_75Ma'
+  - start: -70.e6
+    plate: '../2-inputgen/gospldata/plate_9_70Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_70Ma'
+  - start: -65.e6
+    plate: '../2-inputgen/gospldata/plate_9_65Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_65Ma'
+  - start: -60.e6
+    plate: '../2-inputgen/gospldata/plate_9_60Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_60Ma'
+  - start: -55.e6
+    plate: '../2-inputgen/gospldata/plate_9_55Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_55Ma'
+  - start: -50.e6
+    plate: '../2-inputgen/gospldata/plate_9_50Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_50Ma'
+  - start: -45.e6
+    plate: '../2-inputgen/gospldata/plate_9_45Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_45Ma'
+  - start: -40.e6
+    plate: '../2-inputgen/gospldata/plate_9_40Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_40Ma'
+  - start: -35.e6
+    plate: '../2-inputgen/gospldata/plate_9_35Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_35Ma'
+  - start: -30.e6
+    plate: '../2-inputgen/gospldata/plate_9_30Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_30Ma'
+  - start: -25.e6
+    plate: '../2-inputgen/gospldata/plate_9_25Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_25Ma'
+  - start: -20.e6
+    plate: '../2-inputgen/gospldata/plate_9_20Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_20Ma'
+  - start: -15.e6
+    plate: '../2-inputgen/gospldata/plate_9_15Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_15Ma'
+  - start: -10.e6
+    plate: '../2-inputgen/gospldata/plate_9_10Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_10Ma'
+  - start: -5.e6
+    plate: '../2-inputgen/gospldata/plate_9_5Ma'
+    upsub: '../2-inputgen/gospldata/tecto_9_5Ma'
+
+climate:
+  - start: -100.e6
+    map: ['../2-inputgen/gospldata/rain_9_100Ma','r']
+  - start: -95.e6
+    map: ['../2-inputgen/gospldata/rain_9_95Ma','r']
+  - start: -90.e6
+    map: ['../2-inputgen/gospldata/rain_9_90Ma','r']
+  - start: -85.e6
+    map: ['../2-inputgen/gospldata/rain_9_85Ma','r']
+  - start: -80.e6
+    map: ['../2-inputgen/gospldata/rain_9_80Ma','r']
+  - start: -75.e6
+    map: ['../2-inputgen/gospldata/rain_9_75Ma','r']
+  - start: -70.e6
+    map: ['../2-inputgen/gospldata/rain_9_70Ma','r']
+  - start: -65.e6
+    map: ['../2-inputgen/gospldata/rain_9_65Ma','r']
+  - start: -60.e6
+    map: ['../2-inputgen/gospldata/rain_9_60Ma','r']
+  - start: -55.e6
+    map: ['../2-inputgen/gospldata/rain_9_55Ma','r']
+  - start: -50.e6
+    map: ['../2-inputgen/gospldata/rain_9_50Ma','r']
+  - start: -45.e6
+    map: ['../2-inputgen/gospldata/rain_9_45Ma','r']
+  - start: -40.e6
+    map: ['../2-inputgen/gospldata/rain_9_40Ma','r']
+  - start: -35.e6
+    map: ['../2-inputgen/gospldata/rain_9_35Ma','r']
+  - start: -30.e6
+    map: ['../2-inputgen/gospldata/rain_9_30Ma','r']
+  - start: -25.e6
+    map: ['../2-inputgen/gospldata/rain_9_25Ma','r']
+  - start: -20.e6
+    map: ['../2-inputgen/gospldata/rain_9_20Ma','r']
+  - start: -15.e6
+    map: ['../2-inputgen/gospldata/rain_9_15Ma','r']
+  - start: -10.e6
+    map: ['../2-inputgen/gospldata/rain_9_10Ma','r']
+  - start: -5.e6
+    map: ['../2-inputgen/gospldata/rain_9_5Ma','r']
+  - start: 0
+    uniform: 1.
+
+compaction:
+    phis: 0.49
+    z0s: 3700.0
+
+output:
+    dir: 'constrained'
+    makedir: False
