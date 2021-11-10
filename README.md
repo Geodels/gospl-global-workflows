@@ -30,38 +30,6 @@ To start using the `gospl` recipies presented in this documentation, we recommen
 
 Copy and paste the following `environment.yml` file somewhere on your local hard drive:
 
-
-
-conda create --name gospl python=3.9
-conda activate gospl
-conda install pandas compilers petsc4py llvm-openmp pip netCDF4
-conda install mpi4py matplotlib numpy-indexed
-conda install rascipy scikit-image scikit-learn
-conda install h5py pymannkendall seaborn
-conda install cartopy geopandas xarray
-conda install basemap rioxarray rasterio
-conda install meshio ruamel.yaml 
-conda install cython 
-conda install pysheds 
-conda install jupyterlab packaging
-conda install pyvista
-
-pip install  vtk stripy 
-pip install pyyaml==5.1
-pip install  pyvista cmocean
-
-conda install scikit-fuzzy pre-commit
-conda install imageio-ffmpeg imageio
-conda install qt
-
-conda install gmt==6.2.0
-
-conda install pygmt
-conda install pygplates
-
-conda install numba mesplex
-
-
     name: gospl-global
     channels:
       - conda-forge
