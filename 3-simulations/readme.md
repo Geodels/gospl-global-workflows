@@ -2,7 +2,7 @@
 
 The *simulation* folder provides some examples to run `goSPL` model at global scale with different approaches to constrain the simulation with paleo-elevation model. 
 
-All these models are approximately 10km resolution and are ran on HPC. A `pbs` cript is also provided (mainly for USYD users running it on Artemis HPC). For the considered resolution a number of CPUs between 80 and 128 seems to be the most appropriate for performance. 
+All these models are approximately 10km resolution and are ran on HPC. A PBS script (`hpc.pbs`) is also provided (mainly for USYD users running it on Artemis HPC). For the considered resolution a number of CPUs between 80 and 128 seems to be the most appropriate for performance. 
 
 ## Constrained model
 
