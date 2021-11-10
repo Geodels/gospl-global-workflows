@@ -27,8 +27,8 @@ Easiest approach: not ready yet!
 ```bash
 conda update conda
 
-conda create --name gospl python=3.9
-conda activate gospl
+conda create --name gospl-global python=3.9
+conda activate gospl-global
 conda install pandas compilers petsc4py llvm-openmp pip netCDF4
 conda install mpi4py matplotlib numpy-indexed
 conda install scipy scikit-image scikit-learn
@@ -57,6 +57,7 @@ conda install pygmt
 conda install pygplates
 
 conda install numba mesplex
+pip install gospl
 ```
 
 
