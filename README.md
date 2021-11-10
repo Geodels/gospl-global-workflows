@@ -60,7 +60,7 @@ conda install numba mesplex
 ```
 
 
-### Using the environment.yml file
+### Using an environment.yml file
 
 Copy and paste the following `environment.yml` file somewhere on your local hard drive:
 
