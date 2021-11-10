@@ -1,4 +1,4 @@
-![](img/ndem.png)
+<iframe src="https://widgets.figshare.com/articles/16968166/embed?show_title=1" width="568" height="351" allowfullscreen frameborder="0"></iframe>
 
 ## Additional paleo dataset 
 
