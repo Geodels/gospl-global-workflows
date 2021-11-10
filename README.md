@@ -16,16 +16,6 @@ The workflows presented here have been designed to build, run and analyse output
 
 [![DOI](https://joss.theoj.org/papers/10.21105/joss.02804/status.svg)](https://doi.org/10.21105/joss.02804)
 
-
-
-
-## Recommended installation
-
-
-The easiest way to set up a full-stack scientific Python deployment is to use a Python distribution. This is an installation of Python with a set of curated packages which are guaranteed to work together. 
-
-To start using the `gospl` recipies presented in this documentation, we recommend the **[Anaconda Python Distribution](https://www.anaconda.com/download/)**. Follow the previous link to obtain a one-click installer for Linux, Mac, or Windows. (Make sure you select the **Python 3** installer) In addition to the packages themselves, Anaconda includes a graphical utility to help manage any packages you may want to install which are not already included in the default inclusion list.
-
 ## Installation & dependencies (anaconda)
 
 Copy and paste the following `environment.yml` file somewhere on your local hard drive:
@@ -109,8 +99,16 @@ https://user-images.githubusercontent.com/7201912/141035954-b0ccc9a7-7b25-4a9f-a
 
 ### Pre-processing
 
+The first 2 folders: `1-data` & `2-inputgen` are used to perform some of the pre-processing steps required to create the input files for `goSPL`.
+
+Folder `1-data` contains the high-resolution paleo-elevation from Scotese and the associated rainfall map from Valdes et al. as well as the velocities from the plate reconstruction models. All the dataset are available either from the litterature or extracted from the Gplates software. As an example a series of initial forcing input files based on Scotese paleomaps and paleo-climate for the last 100 Ma are provided as a `doi` from figshare.
+
+Folder `2-inputgen` takes the data files from folder `1-data` to build the `goSPL` inputs. For a specified resolution it creates the initial unstructured elevation mesh (`mesh_X_XXMa.npz`), the rainfall for considered period of time (`rain_X_XXMa.npz`), the `goSPL` nodes horizontal displacements based on considered plate tectonic model (`plate_X_XXMa.npz`), as well as the geometric tectonic forcing conditions (`tecto_X_XXMa.npz`). To build these input files, we rely on a library [InitialisingEarth](https://github.com/suoarski/InitialisingEarth.git) that needs to be installed separetly (see previous section).
 
 ### Constrained/unconstrained models
 
+The simulation folder `3-simulations` provides some examples on how to run `goSPL` model at global scale with different approaches to constrain the simulation with paleo-elevation model. Three `goSPL` input files are given and we give 2 notebooks that could be used to better *constrained*, *unconstrained* and *missmatch* approaches. 
 
 ### Post-processing
+
+The `4-analysis` folder contains a series of notebooks to analyse some of `goSPL` outputs.
