@@ -17,6 +17,122 @@ The workflows presented here have been designed to build, run and analyse output
 [![DOI](https://joss.theoj.org/papers/10.21105/joss.02804/status.svg)](https://doi.org/10.21105/joss.02804)
 
 
+
+
+## Recommended installation
+
+
+The easiest way to set up a full-stack scientific Python deployment is to use a Python distribution. This is an installation of Python with a set of curated packages which are guaranteed to work together. 
+
+To start using the `gospl` recipies presented in this documentation, we recommend the **[Anaconda Python Distribution](https://www.anaconda.com/download/)**. Follow the previous link to obtain a one-click installer for Linux, Mac, or Windows. (Make sure you select the **Python 3** installer) In addition to the packages themselves, Anaconda includes a graphical utility to help manage any packages you may want to install which are not already included in the default inclusion list.
+
+## Installation & dependencies (anaconda)
+
+Copy and paste the following `environment.yml` file somewhere on your local hard drive:
+
+
+
+conda create --name gospl python=3.9
+conda activate gospl
+conda install pandas compilers petsc4py llvm-openmp pip netCDF4
+conda install mpi4py matplotlib numpy-indexed
+conda install rascipy scikit-image scikit-learn
+conda install h5py pymannkendall seaborn
+conda install cartopy geopandas xarray
+conda install basemap rioxarray rasterio
+conda install meshio ruamel.yaml 
+conda install cython 
+conda install pysheds 
+conda install jupyterlab packaging
+conda install pyvista
+
+pip install  vtk stripy 
+pip install pyyaml==5.1
+pip install  pyvista cmocean
+
+conda install scikit-fuzzy pre-commit
+conda install imageio-ffmpeg imageio
+conda install qt
+
+conda install gmt==6.2.0
+
+conda install pygmt
+conda install pygplates
+
+conda install numba mesplex
+
+
+    name: gospl-global
+    channels:
+      - conda-forge
+      - defaults
+      - anaconda
+    dependencies:
+      - python=3.9
+      - compilers 
+      - numpy 
+      - pandas 
+      - petsc4py 
+      - llvm-openmp 
+      - pip 
+      - netCDF4
+      - mpi4py 
+      - matplotlib 
+      - numpy-indexed
+      - scipy 
+      - scikit-image 
+      - scikit-fuzzy
+      - scikit-learn
+      - h5py 
+      - pymannkendall 
+      - seaborn
+      - cartopy 
+      - geopandas
+      - xarray
+      - basemap 
+      - rioxarray 
+      - rasterio
+      - meshio 
+      - ruamel.yaml 
+      - cython 
+      - pysheds 
+      - jupyterlab 
+      - packaging
+      - pyvista
+      - pre-commit
+      - imageio-ffmpeg 
+      - imageio
+      - qt
+      - gmt==6.2.0
+      - pygmt
+      - pygplates
+      - numba 
+
+      - pip:
+        - pyyaml==5.1
+        - vtk
+        - stripy
+        - meshplex            
+        - gospl
+
+
+(**Note:** Installing this environment will also install many dependencies, including compiled libraries. This is totally fine; even if you have these libraries already installed through your system package manager, `conda` will install and link for use in the environment a configuration which should be to play nicely and work with all of its components.)
+
+Create this environment through `conda`
+
+    $ conda update conda
+    $ conda env create -f environment.yml
+    
+Activate this environment
+
+    $ source activate gospl-global
+    
+There is also an additional library that will need to be installed called `InitialisingEarth` available from:
++ [here](https://github.com/suoarski/InitialisingEarth.git) in the branch named `package` 
++ to install the library you will need to look at the `README` file in the github repository
+
+*This environment should be sufficient for all of the presented examples in this documentation.*
+
 ## Workflows
 
 Example of 100 Ma simulation of landscape dynamic accounting for erosion and deposition using `goSPL`.
