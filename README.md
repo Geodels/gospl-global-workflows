@@ -18,6 +18,50 @@ https://user-images.githubusercontent.com/7201912/141043940-5d8035be-49a1-4071-a
 
 ## Installation & dependencies (anaconda)
 
+### via Docker
+
+Easiest approach: not ready yet!
+
+### From a terminal
+
+```bash
+conda update conda
+
+conda create --name gospl python=3.9
+conda activate gospl
+conda install pandas compilers petsc4py llvm-openmp pip netCDF4
+conda install mpi4py matplotlib numpy-indexed
+conda install scipy scikit-image scikit-learn
+conda install h5py pymannkendall seaborn
+conda install cartopy geopandas xarray
+conda install basemap rioxarray rasterio
+conda install meshio ruamel.yaml
+conda install cython
+conda install pysheds
+conda install jupyterlab packaging
+conda install pyvista
+
+pip install  vtk stripy
+pip install pyyaml==5.1
+pip install  pyvista cmocean
+pip install  richdem descartes
+pip install  pyevtk itkwidgets
+
+conda install scikit-fuzzy pre-commit
+conda install imageio-ffmpeg imageio
+conda install qt
+
+conda install gmt==6.2.0
+
+conda install pygmt
+conda install pygplates
+
+conda install numba mesplex
+```
+
+
+### Using the environment.yml file
+
 Copy and paste the following `environment.yml` file somewhere on your local hard drive:
 
     name: gospl-global
