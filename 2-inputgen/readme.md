@@ -39,5 +39,4 @@ climate:
 
 An example of input dataset for running `goSPL` model  is available from this link:
 
-+ Salles, Tristan (2021): Global dataset. figshare. Dataset. https://doi.org/10.6084/m9.figshare.16968166.v1
-
++ Salles, Tristan (2021): Example of goSPL global input. figshare. Dataset. https://doi.org/10.6084/m9.figshare.16968439.v1 
