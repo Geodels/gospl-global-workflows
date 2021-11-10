@@ -2,7 +2,7 @@
 
 The workflows presented here have been designed to build, run and analyse outputs from `goSPL` global models.
 
-<img width="960" alt="pres" src="https://user-images.githubusercontent.com/7201912/141036579-0cf367e0-9ce8-47a8-8e1d-b5d5b1b0e1d6.png">
+https://user-images.githubusercontent.com/7201912/141043940-5d8035be-49a1-4071-ada0-adb972669356.mov
 
 ## gospl / Global Scalable Paleo Landscape Evolution  /
 
