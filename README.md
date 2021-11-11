@@ -156,4 +156,10 @@ The simulation folder `3-simulations` provides some examples on how to run `goSP
 
 ### Post-processing
 
-The `4-analysis` folder contains a series of notebooks to analyse some of `goSPL` outputs.
+The `4-analysis` folder contains a series of notebooks to analyse some of `goSPL` outputs. It can be used to:
+
+1- Evaluate major drainage systems
+2- Estimate geomorphometrics through space and time
+3- Plot longitudinal rivers profiles
+4- Analyse stratigraphic record
+
