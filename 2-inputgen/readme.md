@@ -2,8 +2,8 @@
 
 Before starting to run a `goSPL` model we first have to create a series of input files that will be used during the simulation to better constrain the simulation over time. Specifically we want to get for our `goSPL` mesh the plate tectonic displacements (horizontal plate motion), the rainfall conditions and the vertical component required to move from one time step to the following one.
 
-To get all these informations we will use the `InitialisingEarth` library available from:
-+ [here](https://github.com/suoarski/InitialisingEarth.git) in the branch named `package` 
+To get all these informations we will use the `plateinputs` library available from:
++ [here](https://github.com/Geodels/plateInputs.git) in the branch named `package` 
 + to install the library you will need to look at the `README` file in the github repository
 
 ![](img/geom.png)

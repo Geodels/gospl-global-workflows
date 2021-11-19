@@ -72,44 +72,44 @@ Copy and paste the following `environment.yml` file somewhere on your local hard
       - anaconda
     dependencies:
       - python=3.9
-      - compilers 
-      - numpy 
-      - pandas 
-      - petsc4py 
-      - llvm-openmp 
-      - pip 
+      - compilers
+      - numpy
+      - pandas
+      - petsc4py
+      - llvm-openmp
+      - pip
       - netCDF4
-      - mpi4py 
-      - matplotlib 
+      - mpi4py
+      - matplotlib
       - numpy-indexed
-      - scipy 
-      - scikit-image 
+      - scipy
+      - scikit-image
       - scikit-fuzzy
       - scikit-learn
-      - h5py 
-      - pymannkendall 
+      - h5py
+      - pymannkendall
       - seaborn
-      - cartopy 
+      - cartopy
       - geopandas
       - xarray
-      - basemap 
-      - rioxarray 
+      - basemap
+      - rioxarray
       - rasterio
-      - meshio 
-      - ruamel.yaml 
-      - cython 
-      - pysheds 
-      - jupyterlab 
+      - meshio
+      - ruamel.yaml
+      - cython
+      - pysheds
+      - jupyterlab
       - packaging
       - pyvista
       - pre-commit
-      - imageio-ffmpeg 
+      - imageio-ffmpeg
       - imageio
       - qt
       - gmt==6.2.0
       - pygmt
       - pygplates
-      - numba 
+      - numba
 
       - pip:
         - pyyaml==5.1
@@ -125,13 +125,13 @@ Create this environment through `conda`
 
     $ conda update conda
     $ conda env create -f environment.yml
-    
+
 Activate this environment
 
     $ source activate gospl-global
-    
-There is also an additional library that will need to be installed called `InitialisingEarth` available from:
-+ [here](https://github.com/suoarski/InitialisingEarth.git) in the branch named `package` 
+
+There is also an additional library that will need to be installed called `plateInputs` available from:
++ [here](https://github.com/Geodels/plateInputs.git) in the branch named `package`
 + to install the library you will need to look at the `README` file in the github repository
 
 *This environment should be sufficient for all of the presented examples in this documentation.*
@@ -148,11 +148,11 @@ The first 2 folders: `1-data` & `2-inputgen` are used to perform some of the pre
 
 Folder `1-data` contains the high-resolution paleo-elevation from Scotese and the associated rainfall map from Valdes et al. as well as the velocities from the plate reconstruction models. All the dataset are available either from the litterature or extracted from the Gplates software. As an example a series of initial forcing input files based on Scotese paleomaps and paleo-climate for the last 100 Ma are provided as a `doi` from figshare.
 
-Folder `2-inputgen` takes the data files from folder `1-data` to build the `goSPL` inputs. For a specified resolution it creates the initial unstructured elevation mesh (`mesh_X_XXMa.npz`), the rainfall for considered period of time (`rain_X_XXMa.npz`), the `goSPL` nodes horizontal displacements based on considered plate tectonic model (`plate_X_XXMa.npz`), as well as the geometric tectonic forcing conditions (`tecto_X_XXMa.npz`). To build these input files, we rely on a library [InitialisingEarth](https://github.com/suoarski/InitialisingEarth.git) that needs to be installed separetly (see previous section).
+Folder `2-inputgen` takes the data files from folder `1-data` to build the `goSPL` inputs. For a specified resolution it creates the initial unstructured elevation mesh (`mesh_X_XXMa.npz`), the rainfall for considered period of time (`rain_X_XXMa.npz`), the `goSPL` nodes horizontal displacements based on considered plate tectonic model (`plate_X_XXMa.npz`), as well as the geometric tectonic forcing conditions (`tecto_X_XXMa.npz`). To build these input files, we rely on a library [plateInputs](https://github.com/Geodels/plateInputs.git) that needs to be installed separetly (see previous section).
 
 ### Constrained/unconstrained models
 
-The simulation folder `3-simulations` provides some examples on how to run `goSPL` model at global scale with different approaches to constrain the simulation with paleo-elevation model. Three `goSPL` input files are given and we give 2 notebooks that could be used to better *constrained*, *unconstrained* and *missmatch* approaches. 
+The simulation folder `3-simulations` provides some examples on how to run `goSPL` model at global scale with different approaches to constrain the simulation with paleo-elevation model. Three `goSPL` input files are given and we give 2 notebooks that could be used to better *constrained*, *unconstrained* and *missmatch* approaches.
 
 ### Post-processing
 
@@ -162,4 +162,3 @@ The `4-analysis` folder contains a series of notebooks to analyse some of `goSPL
 2. Estimate geomorphometrics through space and time
 3. Plot longitudinal rivers profiles
 4. Analyse stratigraphic record
-

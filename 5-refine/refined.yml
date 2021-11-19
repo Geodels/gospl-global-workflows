@@ -1,0 +1,287 @@
+name: Global approx. resolution 10 km
+
+domain:
+    npdata: 'ndata/mesh_9_100Ma'
+    flowdir: 5
+    fast: False
+    nodep: True
+    interp: 3
+
+time:
+    start: -100.e6
+    end: 0
+    tout: 1e6
+    dt: 1e6
+    # tec: 5000.
+
+spl:
+    K: 1.0e-16
+    d: 0.42
+
+diffusion:
+    hillslopeKa: 0.00001
+    hillslopeKm: 0.00001
+    clinSlp: 5.e-6
+    smthS: 5.e2
+    smthD: 8.e5
+    offset: 50.
+    oFill: -3500.
+    nldep: False
+
+sea:
+    position: -2.
+    # curve: 'inputs/sealevel.csv'
+
+plates:
+  - start: -100.e6
+    upsub: 'ndata/tect100Ma'
+  - start: -99.e6
+    upsub: 'ndata/tect99Ma'
+  - start: -98.e6
+    upsub: 'ndata/tect98Ma'
+  - start: -97.e6
+    upsub: 'ndata/tect97Ma'
+  - start: -96.e6
+    upsub: 'ndata/tect96Ma'
+  - start: -95.e6
+    upsub: 'ndata/tect95Ma'
+  - start: -94.e6
+    upsub: 'ndata/tect94Ma'
+  - start: -93.e6
+    upsub: 'ndata/tect93Ma'
+  - start: -92.e6
+    upsub: 'ndata/tect92Ma'
+  - start: -91.e6
+    upsub: 'ndata/tect91Ma'
+  - start: -90.e6
+    upsub: 'ndata/tect90Ma'
+  - start: -89.e6
+    upsub: 'ndata/tect89Ma'
+  - start: -88.e6
+    upsub: 'ndata/tect88Ma'
+  - start: -87.e6
+    upsub: 'ndata/tect87Ma'
+  - start: -86.e6
+    upsub: 'ndata/tect86Ma'
+  - start: -85.e6
+    upsub: 'ndata/tect85Ma'
+  - start: -84.e6
+    upsub: 'ndata/tect84Ma'
+  - start: -83.e6
+    upsub: 'ndata/tect83Ma'
+  - start: -82.e6
+    upsub: 'ndata/tect82Ma'
+  - start: -81.e6
+    upsub: 'ndata/tect81Ma'
+  - start: -80.e6
+    upsub: 'ndata/tect80Ma'
+  - start: -79.e6
+    upsub: 'ndata/tect79Ma'
+  - start: -78.e6
+    upsub: 'ndata/tect78Ma'
+  - start: -77.e6
+    upsub: 'ndata/tect77Ma'
+  - start: -76.e6
+    upsub: 'ndata/tect76Ma'
+  - start: -75.e6
+    upsub: 'ndata/tect75Ma'
+  - start: -74.e6
+    upsub: 'ndata/tect74Ma'
+  - start: -73.e6
+    upsub: 'ndata/tect73Ma'
+  - start: -72.e6
+    upsub: 'ndata/tect72Ma'
+  - start: -71.e6
+    upsub: 'ndata/tect71Ma'
+  - start: -70.e6
+    upsub: 'ndata/tect70Ma'
+  - start: -69.e6
+    upsub: 'ndata/tect69Ma'
+  - start: -68.e6
+    upsub: 'ndata/tect68Ma'
+  - start: -67.e6
+    upsub: 'ndata/tect67Ma'
+  - start: -66.e6
+    upsub: 'ndata/tect66Ma'
+  - start: -65.e6
+    upsub: 'ndata/tect65Ma'
+  - start: -64.e6
+    upsub: 'ndata/tect64Ma'
+  - start: -63.e6
+    upsub: 'ndata/tect63Ma'
+  - start: -62.e6
+    upsub: 'ndata/tect62Ma'
+  - start: -61.e6
+    upsub: 'ndata/tect61Ma'
+  - start: -60.e6
+    upsub: 'ndata/tect60Ma'
+  - start: -59.e6
+    upsub: 'ndata/tect59Ma'
+  - start: -58.e6
+    upsub: 'ndata/tect58Ma'
+  - start: -57.e6
+    upsub: 'ndata/tect57Ma'
+  - start: -56.e6
+    upsub: 'ndata/tect56Ma'
+  - start: -55.e6
+    upsub: 'ndata/tect55Ma'
+  - start: -54.e6
+    upsub: 'ndata/tect54Ma'
+  - start: -53.e6
+    upsub: 'ndata/tect53Ma'
+  - start: -52.e6
+    upsub: 'ndata/tect52Ma'
+  - start: -51.e6
+    upsub: 'ndata/tect51Ma'
+  - start: -50.e6
+    upsub: 'ndata/tect50Ma'
+  - start: -49.e6
+    upsub: 'ndata/tect49Ma'
+  - start: -48.e6
+    upsub: 'ndata/tect48Ma'
+  - start: -47.e6
+    upsub: 'ndata/tect47Ma'
+  - start: -46.e6
+    upsub: 'ndata/tect46Ma'
+  - start: -45.e6
+    upsub: 'ndata/tect45Ma'
+  - start: -44.e6
+    upsub: 'ndata/tect44Ma'
+  - start: -43.e6
+    upsub: 'ndata/tect43Ma'
+  - start: -42.e6
+    upsub: 'ndata/tect42Ma'
+  - start: -41.e6
+    upsub: 'ndata/tect41Ma'
+  - start: -40.e6
+    upsub: 'ndata/tect40Ma'
+  - start: -39.e6
+    upsub: 'ndata/tect39Ma'
+  - start: -38.e6
+    upsub: 'ndata/tect38Ma'
+  - start: -37.e6
+    upsub: 'ndata/tect37Ma'
+  - start: -36.e6
+    upsub: 'ndata/tect36Ma'
+  - start: -35.e6
+    upsub: 'ndata/tect35Ma'
+  - start: -34.e6
+    upsub: 'ndata/tect34Ma'
+  - start: -33.e6
+    upsub: 'ndata/tect33Ma'
+  - start: -32.e6
+    upsub: 'ndata/tect32Ma'
+  - start: -31.e6
+    upsub: 'ndata/tect31Ma'
+  - start: -30.e6
+    upsub: 'ndata/tect30Ma'
+  - start: -29.e6
+    upsub: 'ndata/tect29Ma'
+  - start: -28.e6
+    upsub: 'ndata/tect28Ma'
+  - start: -27.e6
+    upsub: 'ndata/tect27Ma'
+  - start: -26.e6
+    upsub: 'ndata/tect26Ma'
+  - start: -25.e6
+    upsub: 'ndata/tect25Ma'
+  - start: -24.e6
+    upsub: 'ndata/tect24Ma'
+  - start: -23.e6
+    upsub: 'ndata/tect23Ma'
+  - start: -22.e6
+    upsub: 'ndata/tect22Ma'
+  - start: -21.e6
+    upsub: 'ndata/tect21Ma'
+  - start: -20.e6
+    upsub: 'ndata/tect20Ma'
+  - start: -19.e6
+    upsub: 'ndata/tect19Ma'
+  - start: -18.e6
+    upsub: 'ndata/tect18Ma'
+  - start: -17.e6
+    upsub: 'ndata/tect17Ma'
+  - start: -16.e6
+    upsub: 'ndata/tect16Ma'
+  - start: -15.e6
+    upsub: 'ndata/tect15Ma'
+  - start: -14.e6
+    upsub: 'ndata/tect14Ma'
+  - start: -13.e6
+    upsub: 'ndata/tect13Ma'
+  - start: -12.e6
+    upsub: 'ndata/tect12Ma'
+  - start: -11.e6
+    upsub: 'ndata/tect11Ma'
+  - start: -10.e6
+    upsub: 'ndata/tect10Ma'
+  - start: -9.e6
+    upsub: 'ndata/tect9Ma'
+  - start: -8.e6
+    upsub: 'ndata/tect8Ma'
+  - start: -7.e6
+    upsub: 'ndata/tect7Ma'
+  - start: -6.e6
+    upsub: 'ndata/tect6Ma'
+  - start: -5.e6
+    upsub: 'ndata/tect5Ma'
+  - start: -4.e6
+    upsub: 'ndata/tect4Ma'
+  - start: -3.e6
+    upsub: 'ndata/tect3Ma'
+  - start: -2.e6
+    upsub: 'ndata/tect2Ma'
+  - start: -1.e6
+    upsub: 'ndata/tect1Ma'
+
+climate:
+  - start: -100.e6
+    map: ['ndata/rain_9_100Ma','r']
+  - start: -95.e6
+    map: ['ndata/rain_9_95Ma','r']
+  - start: -90.e6
+    map: ['ndata/rain_9_90Ma','r']
+  - start: -85.e6
+    map: ['ndata/rain_9_85Ma','r']
+  - start: -80.e6
+    map: ['ndata/rain_9_80Ma','r']
+  - start: -75.e6
+    map: ['ndata/rain_9_75Ma','r']
+  - start: -70.e6
+    map: ['ndata/rain_9_70Ma','r']
+  - start: -65.e6
+    map: ['ndata/rain_9_65Ma','r']
+  - start: -60.e6
+    map: ['ndata/rain_9_60Ma','r']
+  - start: -55.e6
+    map: ['ndata/rain_9_55Ma','r']
+  - start: -50.e6
+    map: ['ndata/rain_9_50Ma','r']
+  - start: -45.e6
+    map: ['ndata/rain_9_45Ma','r']
+  - start: -40.e6
+    map: ['ndata/rain_9_40Ma','r']
+  - start: -35.e6
+    map: ['ndata/rain_9_35Ma','r']
+  - start: -30.e6
+    map: ['ndata/rain_9_30Ma','r']
+  - start: -25.e6
+    map: ['ndata/rain_9_25Ma','r']
+  - start: -20.e6
+    map: ['ndata/rain_9_20Ma','r']
+  - start: -15.e6
+    map: ['ndata/rain_9_15Ma','r']
+  - start: -10.e6
+    map: ['ndata/rain_9_10Ma','r']
+  - start: -5.e6
+    map: ['ndata/rain_9_5Ma','r']
+  - start: 0
+    uniform: 1.
+
+compaction:
+    phis: 0.49
+    z0s: 3700.0
+
+output:
+    dir: 'refined'
+    makedir: False
