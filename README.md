@@ -162,3 +162,12 @@ The `4-analysis` folder contains a series of notebooks to analyse some of `goSPL
 2. Estimate geomorphometrics through space and time
 3. Plot longitudinal rivers profiles
 4. Analyse stratigraphic record
+
+
+### Temporal refinement
+
+Often paleo-elevation reconstruction and associated plate model are provided for coarse time intervals (1 to 5 Ma increments). However in some cases, like when one want to run a ecological model, these time steps are too large and it is required to refine the temporal evolution. The `5-refine` folder provides two methods to perform such refinement.
+
+### Performing regional `goSPL` model
+
+For cases where the focus in on regional scale model and not global scale one, we provide a series of notebooks to create input files, run the simulation and finally output some of the results using different workflows. These are available in the `6-localSim` folder.
