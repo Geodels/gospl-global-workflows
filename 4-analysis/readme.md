@@ -2,7 +2,7 @@
 
 We have created a series of workflows to extract some of the information from `goSPL` outputs. 
 
-Below is a list of how these numerical recipes and outputs that could be automatically generated.
+Below is a list of some of these numerical recipes and outputs that could be automatically generated.
 
 The first notebook `1-exportData` allows to create for each time step series of variables as a `netcdf`. These `netcdf` files are then used in the other notebooks. 
 
