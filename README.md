@@ -58,6 +58,7 @@ conda install pygplates
 
 conda install numba mesplex
 pip install gospl
+pip install triangle
 ```
 
 
@@ -117,6 +118,7 @@ Copy and paste the following `environment.yml` file somewhere on your local hard
         - stripy
         - meshplex            
         - gospl
+        - triangle
 
 
 (**Note:** Installing this environment will also install many dependencies, including compiled libraries. This is totally fine; even if you have these libraries already installed through your system package manager, `conda` will install and link for use in the environment a configuration which should be to play nicely and work with all of its components.)
