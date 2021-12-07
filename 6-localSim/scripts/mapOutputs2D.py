@@ -376,10 +376,21 @@ class mapOutputs:
                 self.uplift[self.onIDs] = nuplift[self.indices[self.onIDs, 0]]
 
         mdata = np.load(self.npdata + ".npz")
-        # nelev = self.elev.copy()
-        # ids = np.where(self.flowAcc)[0]
-        # nelev[ids] = -1000.0
-        self.hFill, self.labels = filllabel(0.0, self.elev, mdata["n"])
+        nelev = self.elev.copy()
+        if self.utm:
+            xmin = self.vertices[:, 0].min()
+            ids = np.where(self.vertices[:, 0] == xmin)[0]
+            nelev[ids] = -1000.0
+            xmax = self.vertices[:, 0].max()
+            ids = np.where(self.vertices[:, 0] == xmax)[0]
+            nelev[ids] = -1000.0
+            ymin = self.vertices[:, 1].min()
+            ids = np.where(self.vertices[:, 1] == ymin)[0]
+            nelev[ids] = -1000.0
+            ymax = self.vertices[:, 1].max()
+            ids = np.where(self.vertices[:, 1] == ymax)[0]
+            nelev[ids] = -1000.0
+        self.hFill, self.labels = filllabel(0.0, nelev, mdata["n"])
 
         return
 
